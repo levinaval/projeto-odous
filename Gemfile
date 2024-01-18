@@ -65,3 +65,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Gemfile
+
+#group :development do
+#  gem 'tailwindcss', '>= 3.4.1'
+#  gem 'postcss-rails'
+#end
