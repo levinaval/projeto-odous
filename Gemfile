@@ -72,3 +72,5 @@ end
 #  gem 'tailwindcss', '>= 3.4.1'
 #  gem 'postcss-rails'
 #end
+
+gem "tailwindcss-rails", "~> 2.3"
