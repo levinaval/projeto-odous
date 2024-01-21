@@ -1,2 +1,7 @@
-<h1>Welcome#about</h1>
-<p>Find me in app/views/welcome/about.html.erb</p>
+<!-- app/views/welcome/about.html.erb -->
+
+<h1>Sobre o Dr.Laécio Alves</h1>
+<p>
+  <%= "Profissional com cursos em #{ @professional_courses.join(', ') }." %>
+  <!-- Adicione outras informações dinâmicas conforme necessário -->
+</p>

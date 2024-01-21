@@ -1,2 +1,11 @@
-<h1>Welcome#team</h1>
-<p>Find me in app/views/welcome/team.html.erb</p>
+<!-- app/views/welcome/team.html.erb -->
+
+<h1>Team</h1>
+<% @team_members.each do |member| %>
+  <div>
+    <h2><%= member[:name] %></h2>
+    <p><%= "Specialization: #{member[:specialization]}" %></p>
+    <p><%= member[:description] %></p>
+    <!-- Adicione outras informações dinâmicas conforme necessário -->
+  </div>
+<% end %>

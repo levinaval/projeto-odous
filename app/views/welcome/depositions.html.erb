@@ -1,2 +1,9 @@
-<h1>Welcome#depositions</h1>
-<p>Find me in app/views/welcome/depositions.html.erb</p>
+<!-- app/views/welcome/depositions.html.erb -->
+
+<h1>Depositions</h1>
+<% @testimonials.each do |testimonial| %>
+  <div>
+    <p><%= "#{testimonial[:name]} says: #{testimonial[:comment]}" %></p>
+    <!-- Adicione outras informações dinâmicas conforme necessário -->
+  </div>
+<% end %>

@@ -1,2 +1,10 @@
-<h1>Welcome#services</h1>
-<p>Find me in app/views/welcome/services.html.erb</p>
+<!-- app/views/welcome/services.html.erb -->
+
+<h1>Services</h1>
+<% @services.each do |service| %>
+  <div>
+    <h2><%= service[:name] %></h2>
+    <p><%= service[:description] %></p>
+    <!-- Adicione outras informações dinâmicas conforme necessário -->
+  </div>
+<% end %>
