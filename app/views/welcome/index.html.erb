@@ -1,16 +1,32 @@
-<h1 class= "text-3xl font-bold underline">Hello World!</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <!-- Adicione outros estilos personalizados aqui, se necessário -->
+  <title>Sua Página</title>
+</head>
+<body>
 
-<!-- app/views/welcome/index.html.erb -->
+  <!-- Barra Superior -->
+  <div class="bg-blue-500 p-40 text-white">
+    <div class="container mx-auto">
+      <div class="flex justify-around mt-8">
+         <a href="/"><i class="fas fa-home"></i></a>
+        <a href="/about">Sobre o Dr. Laécio Alves</a>
+        <a href="/services">Servisos</a>
+        <a href="/depositions">Depoimentos</a>
+        <a href="/team">Equipe de Laboratorio</a>
+        <a href="/contact">Contato</a>
+      </div>
+    </div>
+  </div>
 
-<div class="flex justify-center items-center h-screen">
-  <img src="Laécio.jpg" alt="Profissional" class="animate-fade-in duration-3000">
-</div>
+  <!-- Conteúdo Principal -->
+  <div class="container mx-auto mt-8">
+    <p>Seu conteúdo principal aqui</p>
+  </div>
 
-<div class="flex justify-around mt-8">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/services">Services</a>
-  <a href="/depositions">Depositions</a>
-  <a href="/team">Team</a>
-  <a href="/contact">Contact</a>
-</div>
+</body>
+</html>
