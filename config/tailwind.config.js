@@ -37,8 +37,7 @@ export default {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'siano': '#083344',
-      'céu': '#082f49',
-      'Verde':'#22c55e'
+      'céu': '#082f49'
     },
     extend: {
       // ...
