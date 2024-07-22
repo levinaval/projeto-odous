@@ -23,11 +23,11 @@ class WelcomeController < ApplicationController
   end
 
   def team
-    @team_members[
-    {name: "Carlos da Mata", specialization: "Prótese Dentária"},
-    {name: "Lucas Cunha", specialization: "Cerâmica Dental"},
-    {name: "Marcos Nobrega", specialization: "CAD/CAM Odontológico"}
-  ]
+    @team_members = [
+      {name: "Carlos da Mata", specialization: "Prótese Dentária"},
+      {name: "Lucas Cunha", specialization: "Cerâmica Dental"},
+      {name: "Marcos Nobrega", specialization: "CAD/CAM Odontológico"}
+    ]
   end
 
   def contact
