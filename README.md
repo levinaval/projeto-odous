@@ -1,28 +1,44 @@
-# README
+# Odous
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Click here to visit: [Odous](https://github.com/levinaval/projeto-odous) (for now off)
 
-Things you may want to cover:
+## Setup Project
 
-- **Ruby**: 3.2.0
-- **Rails**: 7.0.4
-- **PostgreSQL**: 13 ou superior
-- **Node.js**: 16.0 ou superior
-- **Yarn**: 1.22 ou superior
+* $ git clone https://github.com/diegoshakan/furiosa.git
+* $ cd furiosa
+* $ rails db:create db:migrate db:seed
+* $ bundle install
+* $ ./bn/dev  
+TailwindCSS is the framework that I choose to this project. So use the command above to see your changes with Tailwind.
 
-* System dependencies
+## Database creation
+* Model Creation: Every time you create a table add the following fields (deleted_at such as datetime and add an index to this), as it serves as a parameter for soft delete, example:
+```
+  class AddDeletedAtToClients < ActiveRecord::Migration
+    def change
+      add_column :customers, :deleted_at, :datetime
+      add_index :customers, :deleted_at
+    end
+  end
+```
+* Another way:
+```
+class CreateBooks < ActiveRecord::Migration[7.0]
+  def change
+    create_table :books, id: :uuid do |t|
+      t.string :title
+      t.references :author, null: false, foreign_key: true, type: :uuid
+      
+      t.datetime :deleted_at, index: true
 
-* Configuration
+      t.timestamps
+    end
+  end
+end
+```
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-* Database creation
+Don't forget to add the `acts_as_paranoid` helper to the models for the methods to work. Further information in the documentation [Paranoia](https://github.com/rubysherpas/paranoia).
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Rubocop
+* After finish a commit, for example, please run `rubocop -a` to adjustment your code to keep a pattern of sintax. Further information in the documentation [Rubocop](https://github.com/rails/rubocop-rails-omakase).
