@@ -5,7 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- **Ruby**: 3.2.0
+- **Rails**: 7.0.4
+- **PostgreSQL**: 13 ou superior
+- **Node.js**: 16.0 ou superior
+- **Yarn**: 1.22 ou superior
 
 * System dependencies
 
