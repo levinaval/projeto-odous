@@ -4,8 +4,8 @@ Click here to visit: [Odous](https://github.com/levinaval/projeto-odous) (for no
 
 ## Setup Project
 
-* $ git clone https://github.com/diegoshakan/furiosa.git
-* $ cd furiosa
+* $ git clone https://github.com/levinaval/projeto-odous
+* $ cd Odous
 * $ rails db:create db:migrate db:seed
 * $ bundle install
 * $ ./bn/dev  
